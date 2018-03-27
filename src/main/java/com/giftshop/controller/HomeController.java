@@ -15,11 +15,13 @@ public class HomeController {
 
     private ArticleDao articleDao = new ArticleDao();
 
+    // home page wiew
     @RequestMapping("/")
     public String home() {
         return "home";
     }
 
+    // articles detailed page wiew
     @RequestMapping("/articleList")
     public String getArticle(Model model) {
         List<Article> articles = articleDao.getArticleList();
@@ -27,11 +29,11 @@ public class HomeController {
         return "articleList";
     }
 
+    // articles list page wiew
     @RequestMapping("/articleList/viewArticle/{articleId}")
     public String viewArticle(@PathVariable String articleId, Model model) throws IOException{
         Article article = articleDao.getArticleById(articleId);
         model.addAttribute(article);
-
         return "viewArticle";
     }
 
