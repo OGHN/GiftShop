@@ -1,2 +1,2 @@
 # GiftShop
-Small "Gift Shop" project exercise
+Develop branch: all features should be merged into this branch.
