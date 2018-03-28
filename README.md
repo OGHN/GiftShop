@@ -1,2 +1,2 @@
 # GiftShop
-Develop branch: all features should be merged into this branch only.
+Stable branch with Hibernate and ClearDB MySQL.(for heroku deployment)
