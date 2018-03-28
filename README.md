@@ -1,2 +1,2 @@
 # GiftShop
-Small "Gift Shop" project exercise
+Main project implementation
