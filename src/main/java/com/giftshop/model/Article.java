@@ -1,8 +1,17 @@
 package com.giftshop.model;
+/**
+ * Created by O HERNANDEZ
+ * on 27/03/2018.
+ */
 
-public class Article {
+import javax.persistence.Entity;
 
-    // products attributes.. will keep simple, nothing fancy
+@Entity
+public class Article extends AbstractPersistenceObject {
+
+    public Article() {
+    }
+
     private String articleName;
     private String articleCategory;
     private String articleDescription;
@@ -10,7 +19,6 @@ public class Article {
     private int articleCustomerReview;
     private String articleShippingInfo;
     private int articleCode;
-    private String articleId;
 
     public String getArticleName() {
         return articleName;
@@ -68,12 +76,5 @@ public class Article {
         this.articleCode = articleCode;
     }
 
-    public String getArticleId() {
-        return articleId;
-    }
-
-    public void setArticleId(String articleId) {
-        this.articleId = articleId;
-    }
 }
 
