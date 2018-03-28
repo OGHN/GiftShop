@@ -1,2 +1,2 @@
 # GiftShop
-Develop branch: all features should be merged into this branch.
+Stable branch with Hibernate and H2 implementation
