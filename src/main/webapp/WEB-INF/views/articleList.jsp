@@ -9,10 +9,10 @@
   Time: 02:01 PM
   To change this template use File | Settings | File Templates.
 --%>
-<link href="<c:url value="/resources/css/shop-item.css" /> " rel="stylesheet">
+<%--<link href="<c:url value="/resources/css/shop-item.css" /> " rel="stylesheet">--%>
 
 <div class="container-wrapper">
-    <div class="container">
+<div class="container">
     </div>
     <div class="page-header">
         <h1>All products</h1>
@@ -20,7 +20,7 @@
     </div>
     <!--<table class="table table-responsive table-hover">-->
 
-    <!-- search -->
+    <!-- search function-->
     <form class="form-inline">
         <div class="form-group">
             <label>Search</label>
@@ -28,7 +28,8 @@
         </div>
     </form>
 
-    <table ng-table="ngTableTutorial" class="table table-striped" ng-controller="tableController">
+    <%--<table ng-table="ngTableTutorial" class="table table-striped" ng-controller="tableController">--%>
+    <table class="table table-striped table-hover">
         <thead>
         <tr class="bg-success">
             <th>Photo tumb</th>
@@ -42,6 +43,7 @@
             <th></th>
         </tr>
         </thead>
+        <tbody>
         <c:forEach items="${articles}" var="article">
             <tr>
                 <td at-implicit at-sortable at-attribute="Photo tumb" width="150" at-initial-sorting="asc"><img
@@ -56,10 +58,11 @@
                 <td at-implicit at-sortable at-attribute="Reviews">${article.articleCustomerReview}</td>
                 <td at-implicit at-sortable at-attribute=="Code">${article.articleCode}</td>
                 <!-- get the corresponding id for binding to articleView -->
-                <td><a href="<spring:url value="/articleList/viewArticle/${article.articleId}" />"
+                <td><a href="<spring:url value="/articleList/viewArticle/${article.id}" />"
                 ><span class="glyphicon glyphicon-eye-open"></span></a></td>
             </tr>
         </c:forEach>
+        </tbody>
     </table>
 
     <div>
@@ -67,7 +70,6 @@
     </div>
 
     <script>
-
 
     </script>
 
