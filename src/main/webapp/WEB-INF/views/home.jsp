@@ -9,7 +9,6 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<link href="<c:url value="/resources/css/shop-item.css" /> " rel="stylesheet">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +17,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Carousel Template for Bootstrap</title>
+    <title>Gift Shop Main page</title>
 
     <!-- Bootstrap core CSS -->
     <link href="<c:url value="/resources/css/bootstrap.min.css" />" rel="stylesheet">
@@ -49,7 +48,7 @@
                         <li class="active"><a href="#">Home</a></li>
                         <li><a href="<c:url value="/articleList" />">Products</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="<c:url value="/contact" />">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -119,7 +118,6 @@
         <span class="sr-only">Next</span>
     </a>
 </div><!-- /.carousel -->
-
 
 <!-- Marketing messaging and featurettes
 ================================================== -->
