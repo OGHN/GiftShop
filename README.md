@@ -1,2 +1,2 @@
-# GiftShop
-Develop branch: all features should be merged into this branch only.
+# Develop branch
+All features should be merged into this branch only.
