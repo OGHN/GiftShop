@@ -1,7 +1,8 @@
 package com.giftshop.controller;
 
 import com.giftshop.model.Article;
-import dao.ArticleDao;
+import com.giftshop.dao.ArticleDao;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -13,7 +14,8 @@ import java.util.List;
 @Controller
 public class HomeController {
 
-    private ArticleDao articleDao = new ArticleDao();
+    @Autowired
+    private ArticleDao articleDao;
 
     // home page wiew
     @RequestMapping("/")
@@ -24,17 +26,21 @@ public class HomeController {
     // articles detailed page wiew
     @RequestMapping("/articleList")
     public String getArticle(Model model) {
-        List<Article> articles = articleDao.getArticleList();
+        List<Article> articles = articleDao.getAllArticles();
         model.addAttribute("articles", articles);
         return "articleList";
     }
 
     // articles list page wiew
-    @RequestMapping("/articleList/viewArticle/{articleId}")
-    public String viewArticle(@PathVariable String articleId, Model model) throws IOException{
-        Article article = articleDao.getArticleById(articleId);
+    @RequestMapping("/articleList/viewArticle/{Id}")
+    public String viewArticle(@PathVariable Long Id, Model model) throws IOException{
+        Article article = articleDao.getArticleById(Id);
         model.addAttribute(article);
         return "viewArticle";
     }
+
+    // contact view
+    @RequestMapping("/contact")
+    public String contact(){return "contact";}
 
 }
