@@ -1,2 +1,2 @@
-# GiftShop
-Stable branch with Hibernate and ClearDB MySQL.(for heroku deployment)
+# Master branch
+Initial commit of the main project
