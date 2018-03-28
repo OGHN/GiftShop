@@ -22,7 +22,7 @@
             <div class="form-group">
                 <label for="exampleInputFile">File input</label>
                 <input type="file" id="exampleInputFile">
-                <p class="help-block">Example block-level help text here.</p>
+                <p class="help-block">Or you could add a *.txt/*.doc/.*pdf file.</p>
             </div>
             <button type="submit" class="btn btn-default">Email</button>
             <button type="submit" class="btn btn-default">Phone</button>

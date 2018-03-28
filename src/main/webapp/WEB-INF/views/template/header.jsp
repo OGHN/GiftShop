@@ -45,7 +45,7 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
+                        <li class="active"><a href="/GiftShop">Home</a></li>
                         <li><a href="<c:url value="/articleList" />">Products</a></li>
                         <li><a href="<c:url value="/about" />">About</a></li>
                         <li><a href="<c:url value="/contact" />">Contact</a></li>
