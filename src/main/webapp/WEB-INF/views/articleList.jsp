@@ -13,7 +13,6 @@
 
 <div class="container-wrapper">
 <div class="container">
-    </div>
     <div class="page-header">
         <h1>All products</h1>
         <p class="lead">Checkout all the products</p>
@@ -64,16 +63,7 @@
         </c:forEach>
         </tbody>
     </table>
-
-    <div>
-        <at-pagination at-list="list" at-config="config"></at-pagination>
-    </div>
-
-    <script>
-
-    </script>
-
-
+</div>
 </div>
 
 <%@include file="/WEB-INF/views/template/footer.jsp" %>
