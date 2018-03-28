@@ -9,7 +9,6 @@
 --%>
 <html>
 
-<link href="<c:url value="/resources/css/shop-item.css" /> " rel="stylesheet">
 <!-- Page Content -->
 <div class="container">
     <div class="row">
